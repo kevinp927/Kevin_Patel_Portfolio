@@ -11,7 +11,7 @@ const Footer = () => {
                 <p className="text-white text-xl font-bold">GITHUB: </p>
                 <div className="social-icon">
                     <a href="https://github.com/kevinp927" target="_blank" rel="noreferrer">
-                        <img src="/assets/github.svg" alt="github" className="w-full h-full object-contain"/>
+                        <img src={import.meta.env.BASE_URL + "assets/github.svg"} alt="github" className="w-full h-full object-contain"/>
                     </a>
                     {/*<img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>*/}
                 </div>

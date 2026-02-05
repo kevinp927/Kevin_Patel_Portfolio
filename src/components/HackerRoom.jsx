@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei'
 
 const HackerRoom = (props) => {
-    const { nodes, materials } = useGLTF('/models/room.glb')
+    const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + 'models/room.glb')
 
     return (
         <group {...props} dispose={null}>
@@ -215,6 +215,6 @@ const HackerRoom = (props) => {
         </group>
     )
 }
-useGLTF.preload('/models/room.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/room.glb')
 export default HackerRoom;
 

@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const navLinks = [
     {
         id: 1,
@@ -26,7 +28,7 @@ export const clientReviews = [
         id: 1,
         name: 'Emily Johnson',
         position: 'Marketing Director at GreenLeaf',
-        img: 'assets/review1.png',
+        img: BASE_URL + 'assets/review1.png',
         review:
             'Working with Kevin was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
     },
@@ -34,7 +36,7 @@ export const clientReviews = [
         id: 2,
         name: 'Mark Rogers',
         position: 'Founder of TechGear Shop',
-        img: 'assets/review2.png',
+        img: BASE_URL + 'assets/review2.png',
         review:
             'Kevin’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
     },
@@ -42,7 +44,7 @@ export const clientReviews = [
         id: 3,
         name: 'John Dohsas',
         position: 'Project Manager at UrbanTech ',
-        img: 'assets/review3.png',
+        img: BASE_URL + 'assets/review3.png',
         review:
             'I can’t say enough good things about Kevin. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
     },
@@ -50,7 +52,7 @@ export const clientReviews = [
         id: 4,
         name: 'Ether Smith',
         position: 'CEO of BrightStar Enterprises',
-        img: 'assets/review4.png',
+        img: BASE_URL + 'assets/review4.png',
         review:
             'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
     },
@@ -67,25 +69,25 @@ export const myProjects = [
 
         // If you have a better image later, swap this.
         // Using an existing project image so nothing breaks:
-        texture: '/assets/ProjectDashboard.png',
-        logo: '/assets/projectmanagement.png',
+        texture: BASE_URL + 'assets/ProjectDashboard.png',
+        logo: BASE_URL + 'assets/projectmanagement.png',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
             boxShadow: '0px 0px 60px 0px #2F67B64D',
         },
-        spotlight: '/assets/spotlight1.png',
+        spotlight: BASE_URL + 'assets/spotlight1.png',
 
         tags: [
             {
                 id: 1,
                 name: 'Next.js',
-                path: '/assets/react.svg', // placeholder icon (swap if you add nextjs.png later)
+                path: BASE_URL + 'assets/react.svg', // placeholder icon (swap if you add nextjs.png later)
             },
             {
                 id: 2,
                 name: 'AWS (EC2/RDS/Cognito)',
-                path: '/assets/react.svg', // placeholder icon (swap if you add aws.png later)
+                path: BASE_URL + 'assets/react.svg', // placeholder icon (swap if you add aws.png later)
             },
         ],
     },
@@ -100,30 +102,30 @@ export const myProjects = [
         href: 'https://github.com/kevinp927?tab=repositories',
 
         // Reusing an existing image so it works immediately (swap later if you add a stock.png)
-        texture: '/assets/StockPro.png',
-        logo: '/assets/stock.png',
+        texture: BASE_URL + 'assets/StockPro.png',
+        logo: BASE_URL + 'assets/stock.png',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
             boxShadow: '0px 0px 60px 0px #2F6DB54D',
         },
-        spotlight: '/assets/spotlight2.png',
+        spotlight: BASE_URL + 'assets/spotlight2.png',
 
         tags: [
             {
                 id: 1,
                 name: 'Python',
-                path: '/assets/python.png',
+                path: BASE_URL + 'assets/python.png',
             },
             {
                 id: 2,
                 name: 'Machine Learning',
-                path: '/assets/scikit.png',
+                path: BASE_URL + 'assets/scikit.png',
             },
             {
                 id: 3,
                 name: 'React',
-                path: '/assets/react.svg',
+                path: BASE_URL + 'assets/react.svg',
             },
         ],
     },
@@ -134,24 +136,24 @@ export const myProjects = [
             'Data preprocessing and feature engineering were conducted on historical NFL match data using pandas to prepare the dataset for modeling. A RandomForestClassifier was developed and trained with Scikit-learn to predict match outcomes, with parameter optimization and evaluation based on accuracy and precision metrics.',
         href: 'https://github.com/kevinp927?tab=repositories',
         // texture: '/textures/project/project1.mp4',
-        texture: '/assets/nfl.png',
-        logo: '/assets/nfllogo.png',
+        texture: BASE_URL + 'assets/nfl.png',
+        logo: BASE_URL + 'assets/nfllogo.png',
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
-        spotlight: '/assets/spotlight1.png',
+        spotlight: BASE_URL + 'assets/spotlight1.png',
         tags: [
             {
                 id: 1,
                 name: 'React.js',
-                path: '/assets/python.png',
+                path: BASE_URL + 'assets/python.png',
             },
             {
                 id: 2,
                 name: 'TailwindCSS',
-                path: 'assets/scikit.png',
+                path: BASE_URL + 'assets/scikit.png',
             },
             // {
             //     id: 3,
@@ -172,19 +174,19 @@ export const myProjects = [
             'A C++ hashmap data structure was developed with efficient collision handling and memory management to improve performance. Custom hashing and bitstream functions were implemented, and extensive testing validated performance, collision resolution, and memory optimization under various load conditions.',
         href: 'https://github.com/kevinp927?tab=repositories',
         // texture: '/textures/project/project2.mp4',
-        texture: '/assets/file.png',
-        logo: '/assets/filelogo.png',
+        texture: BASE_URL + 'assets/file.png',
+        logo: BASE_URL + 'assets/filelogo.png',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
             boxShadow: '0px 0px 60px 0px #2F6DB54D',
         },
-        spotlight: '/assets/spotlight2.png',
+        spotlight: BASE_URL + 'assets/spotlight2.png',
         tags: [
             {
                 id: 1,
                 name: 'React.js',
-                path: '/assets/c++.png',
+                path: BASE_URL + 'assets/c++.png',
             },
             // {
             //     id: 2,
@@ -209,9 +211,9 @@ export const myProjects = [
         subdesc:
             'Core functionality for a 3-card poker game was implemented using OOP principles, including hand evaluation, betting mechanics, and game flow control for fair gameplay. A responsive user interface was designed with JavaFX, and backend logic was integrated with the frontend, with thorough testing for reliability and responsiveness.',
         href: 'https://github.com/kevinp927?tab=repositories',
-        texture: '/assets/poker.png',
+        texture: BASE_URL + 'assets/poker.png',
         // texture: '/textures/project/project3.mp4',
-        logo: '/assets/pokerlogo.png',
+        logo: BASE_URL + 'assets/pokerlogo.png',
         logoStyle: {
             backgroundColor: '#60f5a1',
             background:
@@ -219,17 +221,17 @@ export const myProjects = [
             border: '0.2px solid rgba(208, 213, 221, 1)',
             boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
         },
-        spotlight: '/assets/spotlight3.png',
+        spotlight: BASE_URL + 'assets/spotlight3.png',
         tags: [
             {
                 id: 1,
                 name: 'React.js',
-                path: '/assets/javaw.png',
+                path: BASE_URL + 'assets/javaw.png',
             },
             {
                 id: 2,
                 name: 'TailwindCSS',
-                path: 'assets/javafx.png',
+                path: BASE_URL + 'assets/javafx.png',
             },
             // {
             //     id: 3,
@@ -337,7 +339,7 @@ export const workExperiences = [
         pos: 'App Developer',
         duration: 'Jan 2024 -  Present',
         title: "Developed a mobile application for fftradingroom.com using React Native, featuring real-time sports news updates, comprehensive fantasy draft guides, and a mock draft simulator with real-time data integration to enhance user engagement. Designed an intuitive UI, conducted user testing, and iteratively improved the app for an optimal user experience.",
-        icon: '/assets/ftr.png',
+        icon: BASE_URL + 'assets/ftr.png',
         animation: 'victory',
     },
     {
@@ -346,7 +348,7 @@ export const workExperiences = [
         pos: 'Course Assistant',
         duration: 'Jan 2024 -  May 2024',
         title: "Assisted students in understanding Java programming concepts through homework support, project guidance, and constructive feedback on coding assignments. Facilitated study sessions and group discussions to foster collaboration and enhance student engagement with course content.",
-        icon: '/assets/illini.png',
+        icon: BASE_URL + 'assets/illini.png',
         animation: 'clapping',
     },
     {
@@ -355,7 +357,7 @@ export const workExperiences = [
         pos: 'Senior Consultant - Mass Transit District',
         duration: '2023 - 2024',
         title: "Automated KPI tracking via data analysis, implementing software upgrades to improve reporting and saved 65k annually. Integrated data frameworks for real-time reporting, optimizing MTD's zero-emission and accessibility initiative",
-        icon: '/assets/ibc.png',
+        icon: BASE_URL + 'assets/ibc.png',
         animation: 'salute',
     },
 ];

@@ -9,9 +9,9 @@ import gsap from "gsap";
 
 const DemoComputer = (props) => {
     const group = useRef()
-    const { nodes, materials} = useGLTF('/models/computer.glb')
-    //const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
-    const txt = useTexture(props.texture ? props.texture : '/assets/nfl.png');
+    const { nodes, materials} = useGLTF(import.meta.env.BASE_URL + 'models/computer.glb')
+    //const txt = useVideoTexture(props.texture ? props.texture : import.meta.env.BASE_URL + 'textures/project/project1.mp4');
+    const txt = useTexture(props.texture ? props.texture : import.meta.env.BASE_URL + 'assets/nfl.png');
     useEffect(() => {
         if (txt) {
             txt.flipY = false; // Prevent flipping
@@ -1014,6 +1014,6 @@ const DemoComputer = (props) => {
     )
 }
 
-useGLTF.preload('/models/computer.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/computer.glb')
 
 export default DemoComputer

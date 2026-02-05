@@ -99,7 +99,7 @@ const Hero = () => {
                 </Canvas>
             </div>
             <div className="absolute bottom-20 left-0 right-0 w-full z-10 c-space flex justify-center">
-                <a href="/assets/Resume.pdf" className="w-fit" target="_blank" rel="noreferrer">
+                <a href={import.meta.env.BASE_URL + "assets/Resume.pdf"} className="w-fit" target="_blank" rel="noreferrer">
                     <button
                         className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-extrabold text-lg py-3 px-6 rounded-xl shadow-lg hover:from-blue-500 hover:to-cyan-500 transition-transform transform hover:scale-105">
                         Download Resume
